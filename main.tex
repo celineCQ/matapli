@@ -1,7 +1,7 @@
 %%% ---------------
 %%% PREAMBLE
 %%% ---------------
-\documentclass[10pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 
 % Define geometry (without using the geometry package)
 \setlength\topmargin{-48pt}
@@ -39,12 +39,12 @@
 % Customize (header and) footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lfoot{	\footnotesize 
-		Science \& Technology Newletter \\
-		\Mundus\ \href{http://www.howtotex.com}{HowToTeX.com}	\quad
-		\Telefon\ 555-5555											\quad
-		\Letter\ \href{mailto:frits@howtotex.com}{frits@howtotex.com}
-	  }
+%\lfoot{	\footnotesize 
+%		Science \& Technology Newletter \\
+%		\Mundus\ \href{http://www.howtotex.com}{HowToTeX.com}	\quad
+%		\Telefon\ 555-5555											\quad
+%		\Letter\ \href{mailto:frits@howtotex.com}{frits@howtotex.com}
+%	  }
 \cfoot{}
 \rfoot{\footnotesize ~\\ Page \thepage}
 \renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
@@ -73,15 +73,6 @@
 \newcommand{\JournalIssue}[1]{%
 		\hfill \textsc{\mydate \today}
 		\par \normalsize \normalfont}
-
-\newcommand{\NewsItem}[1]{%
-			
-		\large \bfseries #1 \vspace{4pt}
-		\par \normalsize \normalfont}
-		
-\newcommand{\NewsAuthor}[1]{%
-			\hfill by \textsc{#1} \vspace{4pt}
-			\par \normalfont}		
 
 
 %%% ---------------
@@ -117,14 +108,15 @@
 	\SepRule
 \vspace{0.5cm}
 
-	\NewsItem{Histoire de la structure}
+	\section*{Histoire de la structure}
  Cemosis a \'et\'e crée en Janvier 2013, en réponse à l'appel IDEX 2012 pour un projet d'attractivité, dans le but de supporter C. Prud'homme, professeur dans l'équipe modélisation et Contrôle de l'IRMA (Institut de recherche en mathématiques avancées). Le but initial était double : 
  \begin{itemize}
- 	\item[-] L'ouverture de nouveaux axes de recherche pluridisciplinaire, en plus de ceux existant déjà : fusion et physique des plasmas.
+ 	\item[-] L'ouverture de nouveaux axes de recherche pluridisciplinaire, en plus de ceux existant déjà (fusion et physique des plasmas).
  	\item[-] Le développement des relations entre mathématiques et entreprises.
  \end{itemize}
  
  En 2015, l'étude sur l'impact socio-économique des mathématiques (rapport EISEM), donne un premier avis sur la contribution forte des mathématiques dans l'économie nationale et considère les mathématiques comme jouant un rôle qui adresse les challenges majeurs de demain. Cemosis est cité dans le rapport et regardé comme un modèle d'initiative développant les interactions entre l'industrie et les mathématiques.
+ 
  Fin 2017, Cemosis a accueillit l'équipe en charge du projet Simseo, dont le but est la valorisation de la simulation pour les petites et moyennes entreprises, afin de fournir une vitrine homogène de services autour de la simulation.
  
 
@@ -132,9 +124,19 @@
 % Other news (2)
 % -----
 
-\NewsItem{L'organisation de Cemosis}
-Sous la direction de Christophe Prud'homme, Cemosis se repose sur des chercheurs de l'équipe Modélisation et Contrôle de de l'IRMA de l'université de Strasbourg ainsi que sur des chercheurs de l'université de Haute-Alsace, dans le but de remplir ses missions. On compte environ 9 chercheurs permanents ayant participés aux activités de recherche pluridisciplinaires ou aux collaborations mathématiques-entreprises.
-Depuis 2016, Cemosis possède aussi un ingénieur de Recherche dédié à la plateforme. Un project manager ainsi qu'un business developper sont venus ensuite	 soutenir l'activité des chercheurs de l'équipe.
+\section*{L'organisation de Cemosis}
 
+Sous la direction de Christophe Prud'homme, Cemosis se repose sur des chercheurs de l'équipe Modélisation et Contrôle de de l'IRMA de l'université de Strasbourg ainsi que sur des chercheurs de l'université de Haute-Alsace, dans le but de remplir ses missions. On compte environ 9 chercheurs permanents ayant participé aux activités de recherche pluridisciplinaires ou aux collaborations mathématiques-entreprises.
+
+Depuis 2016, Cemosis possède aussi un ingénieur de Recherche dédié à la plateforme. Un project manager ainsi qu'un business développer sont venus ensuite	 soutenir l'activité des chercheurs de l'équipe.
+
+Une des actions de Cemosis pour partager son travail à l'intérieur de ses collaborations est le développement de logiciel, principalement pour des méthodes numériques, des algorithmes, ainsi que pour quelques applications.
+Le logiciel phare de Cemosis, Feel++ \url{http://www.feelpp.org} est une plateforme logiciel ouverte autour de laquelle se rassemblent chercheurs, utilisateurs et développeurs pour collaborer.
+D'autres logiciels sont développés à l'intérieur de Cemosis, de part certaines collaborations. On notera AngioTK, pour la reconstruction de vaisseaux sanguins à partir d'images médicales, l'infrastructure cloud pour HPC MSO4SC ainsi que Selalib, une bibliothèque logicielle de méthodes numériques semi-lagrangienne pour la physique des plasmas.
+
+Les collaborations avec Cemosis sont multiples, qu'elles soient pluridisciplinaires et académiques, ou avec une entreprise elles peuvent intervenir à plusieurs niveaux.
+
+\subsection*{Premier niveau : les collaborations courtes}
+Les tech
 % -----
 \end{document} 
